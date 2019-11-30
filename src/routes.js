@@ -11,14 +11,14 @@ import DefaultPage from "./containers/Default";
 const Routes = props => {
   return (
     <div className="app">
-      <Layout>
-        <ConnectedRouter history={history}>
+      <ConnectedRouter history={history}>
+        <Layout>
           <Switch>
             <Route exact path="/" component={DefaultPage} />
-            <Route component={Error404} />
+            <Route component={Error404} />∫
           </Switch>
-        </ConnectedRouter>
-      </Layout>
+        </Layout>
+      </ConnectedRouter>
     </div>
   );
 };
